@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: morphsite-marketing-api
+    runtime: docker
+    plan: free
+    region: singapore
+    rootDir: integrations/hackathon-mvp/backend
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: MOCK_MODE
+        value: "true"
+      - key: DATABASE_URL
+        value: sqlite:////app/data/promo.db
+      - key: UPLOAD_DIR
+        value: /app/uploads
+      - key: OUTPUT_DIR
+        value: /app/outputs
+      - key: FONT_PATH
+        value: /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+      - key: FFMPEG_PATH
+        value: ffmpeg
