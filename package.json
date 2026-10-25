@@ -1,0 +1,45 @@
+{
+  "name": "morphsite",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --webpack",
+    "start": "next start",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "diagnose:gemini": "integrations/hackathon-mvp/backend/.venv312/Scripts/python.exe scripts/diagnose-gemini.py --probe",
+    "dev:backend": "integrations/hackathon-mvp/backend/.venv312/Scripts/python.exe scripts/start-marketing.py",
+    "test": "tsx --test tests/*.test.ts",
+    "test:browser": "python scripts/check_browser.py --port 3100",
+    "test:browser:production": "npm run build && python scripts/check_browser.py --production --port 3101",
+    "test:browser:visual": "npm run build && python scripts/check_browser.py --production --port 3115 --suite all"
+  },
+  "dependencies": {
+    "@fontsource-variable/geist": "^5.3.0",
+    "@fontsource-variable/geist-mono": "^5.3.0",
+    "@fontsource/geist-sans": "^5.3.0",
+    "@google/genai": "^2.31.0",
+    "lucide-react": "1.61.0",
+    "motion": "14.6.0",
+    "next": "16.4.3",
+    "qrcode": "^1.5.4",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "server-only": "^0.0.1",
+    "three": "^0.186.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "26.6.5",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/three": "^0.186.0",
+    "postcss": "8.5.31",
+    "tailwindcss": "4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "7.0.2"
+  }
+}

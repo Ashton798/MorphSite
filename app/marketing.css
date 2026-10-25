@@ -1,0 +1,47 @@
+/* Studio-only marketing workspace: uses MorphSite surfaces, not the MVP's separate UI. */
+.marketing-entry { display: flex; align-items: center; justify-content: flex-end; padding: 9px 20px; border-bottom: 1px solid var(--space-stroke); }
+.marketing-entry button { display: inline-flex; align-items: center; gap: 9px; border: 1px solid var(--space-stroke); background: var(--surface-raised); color: var(--text); border-radius: 7px; padding: 8px 12px; font-size: 11px; }
+.marketing-entry button:hover, .marketing-entry button:focus-visible { border-color: var(--space-lilac); }
+.marketing-scroll[hidden] { display: none; }
+.marketing-scroll { overflow: auto; flex: 1; min-height: 0; background: var(--black); }
+.marketing-panel { max-width: 1180px; margin: 0 auto; padding: clamp(20px, 3vw, 42px); color: var(--text); }
+.marketing-panel > header { margin-bottom: 28px; }
+.marketing-panel h2 { margin: 9px 0 10px; font-size: clamp(24px, 3vw, 36px); letter-spacing: -.06em; line-height: 1.1; font-weight: 500; }
+.marketing-panel > header p { max-width: 600px; font-size: 12px; color: var(--muted); line-height: 1.8; }
+.marketing-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); gap: 14px; align-items: start; }
+.marketing-form, .marketing-results { min-width: 0; border: 1px solid var(--space-stroke); background: var(--surface); border-radius: 10px; padding: clamp(15px, 2vw, 24px); }
+.marketing-form > label, .marketing-row label, .marketing-model label { display: grid; gap: 8px; min-width: 0; margin-bottom: 14px; color: var(--muted); font-size: 10px; }
+.marketing-form input:not([type="file"]), .marketing-form select, .marketing-form textarea { display: block; width: 100%; min-width: 0; border: 1px solid var(--line-light); border-radius: 6px; background: var(--black); color: var(--text); padding: 10px 11px; font-size: 12px; line-height: 1.5; }
+.marketing-form textarea { resize: vertical; }
+.marketing-form input:focus-visible, .marketing-form select:focus-visible, .marketing-form textarea:focus-visible { outline: 1px solid var(--space-lilac); }
+.marketing-row { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
+.marketing-form .marketing-file { display: inline-flex; align-items: center; gap: 8px; max-width: 100%; padding: 11px; border: 1px dashed var(--line-light); border-radius: 6px; cursor: pointer; color: var(--text); }
+.marketing-file input { width: 100%; font-size: 9px; }
+.marketing-source { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; color: var(--muted); font-size: 10px; }
+.marketing-source img { width: 54px; height: 54px; border-radius: 5px; object-fit: cover; }
+.marketing-actions, .marketing-model { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.marketing-actions button { display: inline-flex; align-items: center; gap: 6px; min-height: 38px; padding: 8px 12px; border-radius: 6px; font-size: 10px; }
+.marketing-actions button:disabled { opacity: .4; }
+.marketing-hint { margin: 12px 0; color: var(--muted); font-size: 10px; line-height: 1.65; }
+.marketing-model { border-top: 1px solid var(--space-stroke); padding-top: 18px; }
+.marketing-model label { flex: 1; min-width: 130px; }
+.marketing-model button { display: inline-flex; align-items: center; gap: 5px; padding: 9px 11px; border-radius: 6px; font-size: 10px; }
+.marketing-advice { padding: 12px; border: 1px solid var(--space-stroke); border-radius: 6px; color: var(--text); font-size: 11px; line-height: 1.7; }
+.marketing-advice p { white-space: pre-wrap; }
+.marketing-advice button { color: var(--space-mint); margin-top: 8px; font-size: 10px; }
+.marketing-results-head, .marketing-task-status, .marketing-result-block h3 { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.marketing-results-head button, .marketing-result-block a { display: inline-flex; align-items: center; gap: 6px; color: var(--space-mint); font-size: 10px; }
+.marketing-await { display: grid; place-content: center; justify-items: center; min-height: 250px; gap: 12px; color: var(--muted); text-align: center; font-size: 11px; }
+.marketing-task-status { margin-top: 19px; font-size: 12px; }
+.marketing-task-status span { color: var(--muted); font: 9px var(--font-mono); }
+.marketing-warning { margin: 14px 0; padding: 10px; border: 1px solid var(--line-light); color: var(--space-lilac); font-size: 10px; line-height: 1.6; border-radius: 5px; }
+.marketing-result-block { margin-top: 20px; padding-top: 17px; border-top: 1px solid var(--space-stroke); }
+.marketing-result-block h3 { margin-bottom: 12px; font-size: 12px; font-weight: 600; }
+.marketing-result-block small { color: var(--space-lilac); font-size: 9px; font-weight: 400; }
+.marketing-copy { display: flex; align-items: start; gap: 7px; padding: 10px 0; border-top: 1px solid var(--space-stroke); }
+.marketing-copy p { flex: 1; min-width: 0; color: var(--muted); font-size: 11px; line-height: 1.7; overflow-wrap: anywhere; }
+.marketing-copy button { color: var(--space-mint); padding: 4px; }
+.marketing-poster { display: block; max-width: min(100%, 250px); max-height: 380px; object-fit: contain; margin-bottom: 9px; }
+.marketing-result-block video { display: block; max-width: min(100%, 250px); max-height: 380px; margin-bottom: 9px; }
+@media (max-width: 1250px) { .marketing-grid { grid-template-columns: minmax(0,1fr); } }
+@media (max-width: 600px) { .marketing-panel { padding: 18px 12px 35px; } .marketing-row { grid-template-columns: 1fr; gap: 0; } .marketing-entry { justify-content: center; } .marketing-entry button { width: 100%; justify-content: center; } }

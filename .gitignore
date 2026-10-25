@@ -1,0 +1,27 @@
+node_modules/
+.next/
+out/
+.env*
+!.env.example
+*.tsbuildinfo
+test-results/
+*.log
+__pycache__/
+*.pyc
+.venv*/
+integrations/hackathon-mvp/backend/data/
+integrations/hackathon-mvp/uploads/
+integrations/hackathon-mvp/outputs/
+.morphsite-media/
+.morphsite-published/
+.DS_Store
+
+# Local deployment artifacts
+deploy-package/
+upload-package/
+videos/
+promo-generator-source.zip
+黑客松MVP.zip
+NUL
+.codex/
+.cursor/

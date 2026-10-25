@@ -1,0 +1,16 @@
+[
+  {
+    "id": "deepseek",
+    "name": "DeepSeek Chat",
+    "base_url": "https://api.deepseek.com/v1",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "model": "deepseek-chat"
+  },
+  {
+    "id": "my-local",
+    "name": "本地模型（Ollama 等 OpenAI 兼容服务）",
+    "base_url": "http://localhost:11434/v1",
+    "api_key_env": "LOCAL_LLM_API_KEY",
+    "model": "qwen2.5:7b"
+  }
+]

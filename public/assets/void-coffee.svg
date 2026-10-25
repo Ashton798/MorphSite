@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="1000" gradientUnits="userSpaceOnUse"><stop stop-color="#47403A"/><stop offset=".5" stop-color="#181715"/><stop offset="1" stop-color="#080A09"/></linearGradient>
+    <linearGradient id="cup" x1="260" y1="480" x2="600" y2="760" gradientUnits="userSpaceOnUse"><stop stop-color="#DAD6C9"/><stop offset=".3" stop-color="#99998A"/><stop offset=".75" stop-color="#474A40"/><stop offset="1" stop-color="#252C23"/></linearGradient>
+    <linearGradient id="bag" x1="290" y1="170" x2="520" y2="600" gradientUnits="userSpaceOnUse"><stop stop-color="#635F54"/><stop offset=".3" stop-color="#B7AA8D"/><stop offset=".53" stop-color="#797461"/><stop offset="1" stop-color="#34372D"/></linearGradient>
+    <radialGradient id="coffee"><stop stop-color="#492819"/><stop offset=".8" stop-color="#29140C"/><stop offset=".94" stop-color="#A87538"/><stop offset="1" stop-color="#3D291B"/></radialGradient>
+    <filter id="shadow"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="texture"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".06"/></feComponentTransfer><feBlend in="SourceGraphic" mode="soft-light"/></filter>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h900v1000H0z"/>
+  <path d="M0 0h400L0 740z" fill="#E1D0AA" opacity=".04"/>
+  <path d="m0 760 900-80v320H0z" fill="#32332A"/>
+  <path d="m0 760 900-80" stroke="#686653" stroke-opacity=".2"/>
+  <ellipse cx="455" cy="798" rx="290" ry="45" fill="#000" opacity=".6" filter="url(#shadow)"/>
+  <g transform="rotate(-9 380 440)" filter="url(#texture)">
+    <path d="m236 209 279-12 28 357-39 53-276-7-16-44z" fill="url(#bag)"/>
+    <path d="m236 209 279-12-5 25-278 10z" fill="#34362D"/>
+    <path d="m228 600 24-43 267-3-15 53z" fill="#292E25"/>
+    <path d="m237 211 14 345M515 201l4 351" stroke="#E7E1C4" stroke-opacity=".2"/>
+    <rect x="272" y="321" width="211" height="180" fill="#181C16"/>
+    <text x="292" y="389" fill="#EAE5D7" font-family="Arial, sans-serif" font-size="55" font-weight="700" letter-spacing="-4">VOID</text>
+    <text x="293" y="414" fill="#AAAB94" font-family="monospace" font-size="11" letter-spacing="3">COFFEE / 01</text>
+    <path d="M293 440h169" stroke="#777A62"/>
+    <text x="293" y="467" fill="#B2B398" font-family="monospace" font-size="10">THE HOUSE ROAST</text>
+    <text x="293" y="484" fill="#B2B398" font-family="monospace" font-size="9">WHOLE BEAN / 250G</text>
+  </g>
+  <ellipse cx="517" cy="768" rx="220" ry="60" fill="#737667"/>
+  <ellipse cx="517" cy="760" rx="210" ry="52" fill="#999C88"/>
+  <ellipse cx="517" cy="761" rx="160" ry="36" stroke="#555F4D" stroke-width="2"/>
+  <path d="M634 566c116-20 124 117 30 138l-14-30c56-15 59-79-11-76" stroke="url(#cup)" stroke-width="27"/>
+  <path d="M357 546c-5 73 10 152 44 179 54 39 155 38 207-6 35-32 44-107 42-173z" fill="url(#cup)"/>
+  <ellipse cx="504" cy="546" rx="148" ry="54" fill="#BDBDAB"/>
+  <ellipse cx="504" cy="546" rx="133" ry="43" fill="#535749"/>
+  <ellipse cx="504" cy="550" rx="125" ry="35" fill="url(#coffee)"/>
+  <path d="M407 539c42-21 122-24 177-2" stroke="#DFB677" stroke-opacity=".35" stroke-width="2"/>
+  <path d="M396 593c2 49 11 85 24 99" stroke="#F0EBDD" stroke-opacity=".15" stroke-width="6" stroke-linecap="round"/>
+  <text x="460" y="666" fill="#DDD9CC" font-family="Arial, sans-serif" font-size="27" font-weight="700" letter-spacing="-2" transform="rotate(3 460 666)">VOID</text>
+  <path d="M493 458c-38-42 30-49 5-95M530 472c-24-38 29-57 8-89" stroke="#DDD4BB" stroke-opacity=".17" stroke-width="4" stroke-linecap="round"/>
+  <path d="M48 942h56M48 942v-56" stroke="#C7BD9E" stroke-opacity=".35"/>
+  <text x="128" y="942" fill="#B4AE98" font-family="monospace" font-size="11" letter-spacing="2">VOID COFFEE / ORIGINAL DEMO ARTWORK</text>
+</svg>
